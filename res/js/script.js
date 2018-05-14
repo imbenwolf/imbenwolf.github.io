@@ -11,7 +11,10 @@ $(document).ready(function () {
     connectParticles: true
   });
 
-  $('.button-collapse').sideNav();
+  $('.button-collapse').sideNav({
+    closeOnClick: true,
+    draggable: true
+  });
   $('.parallax').parallax();
 
   setupSkills();
