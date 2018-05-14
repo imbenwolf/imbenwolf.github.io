@@ -1,0 +1,305 @@
+/* Custom Stylesheet */
+nav ul a {
+  color: #444;
+}
+
+.logo.small-logo {
+  height: 100px;
+  filter: invert(1);
+}
+
+.logo.big-logo {
+  height: 135px;
+}
+
+.logo {
+  transition: height 0.3s ease;
+}
+
+nav {
+  transition: all 0.5s ease;
+}
+
+.transparent {
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: none;
+}
+
+.transparent ul a {
+  color: rgba(255, 255, 255, .9);
+}
+
+.transparent ul a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-fixed {
+  height: 0;
+}
+
+h2 {
+  font-size: 1.64rem;
+  line-height: 110%;
+  margin: .82rem 0 .656rem 0;
+}
+
+h3 {
+  font-size: 2.28rem;
+  line-height: 110%;
+  margin: 1.14rem 0 .912rem 0;
+}
+
+h4, footer h3 {
+  font-size: 1.64rem;
+  line-height: 110%;
+  margin: .82rem 0 .656rem 0;
+}
+
+h5 {
+  font-size: 1rem;
+  line-height: 110%;
+  margin: .5rem 0 .4rem 0;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.fat {
+  font-weight: 500;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  height: 0;
+  line-height: 0;
+  color: rgba(255, 255, 255, .9);
+}
+
+.parallax-container .section {
+  width: 100%;
+  position: absolute;
+  top: 20%;
+}
+
+.parallax-quote {
+  font-size: 1.64rem;
+  line-height: 110%;
+  margin: .82rem 0 .656rem 0;
+}
+
+#intro {
+  min-height: 430px;
+}
+
+.particles-wrapper {
+  position: relative;
+}
+
+.particles {
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#whyme-container {
+  overflow-x: hidden;
+}
+
+.whyme-reasons {
+  border-left: 8px solid #009688;
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 2px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  color: #333;
+  background-color: #FFFFFF;
+  margin: 50px auto;
+  letter-spacing: 0.5px;
+  position: relative;
+  line-height: 1.4em;
+  padding: 20px !important;
+  list-style: none;
+  text-align: left;
+}
+
+.whyme-reasons h4 {
+  font-size: 1.4em;
+}
+
+.whyme-reasons .reason {
+  border-bottom: 1px solid rgba(160, 160, 160, 0.2);
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.whyme-reasons .reason:last-of-type {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border: none;
+}
+
+.whyme-reasons .reason:before,
+.whyme-reasons .reason:after {
+  position: absolute;
+  display: block;
+  top: 0;
+}
+
+.whyme-reasons .reason:before {
+  left: -177.5px;
+  color: #4db6ac;
+  content: attr(data-adjective);
+  text-align: right;
+  font-size: 16px;
+  min-width: 120px;
+}
+
+.whyme-reasons .reason:after {
+  box-shadow: 0 0 0 8px #009688;
+  left: -30px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  height: 11px;
+  width: 11px;
+  content: "";
+  top: 5px;
+}
+
+@media (max-width: 945px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+
+  #intro .section {
+    top: 20%;
+  }
+
+  .whyme-reasons .reason::before {
+    left: 0.5px;
+    top: 20px;
+    min-width: 0;
+    font-size: 13px;
+  }
+
+  .whyme-reasons h3 {
+    font-size: 16px;
+  }
+
+  .whyme-reasons p {
+    padding-top: 20px;
+  }
+
+  section.lab h3.card-title {
+    padding: 5px;
+    font-size: 16px
+  }
+}
+
+@media (max-width: 768px) {
+  #intro .section {
+    top: 10%;
+  }
+
+  .logo {
+    margin-left: 15px;
+  }
+
+  .small-logo {
+    height: 85px !important;
+  }
+
+  .big-logo {
+    height: 100px !important;
+  }
+
+  .whyme-reasons .reason::before {
+    left: 0.5px;
+    top: 38px;
+    min-width: 0;
+    font-size: 13px;
+  }
+
+  .whyme-reasons h3 {
+    font-size: 16px;
+  }
+
+  .whyme-reasons p {
+    padding-top: 20px;
+  }
+}
+
+.skill-bar-wrapper {
+  height: 50px;
+}
+
+.skill-bar-wrapper > h5 {
+  float: left;
+  margin: 10px 0 5px 0;
+}
+
+.skill-bar > svg {
+  height: 6px;
+}
+
+.skill-circle-wrapper {
+  display: inline-block;
+}
+
+.skill-circle {
+  height: 100px;
+  display: inline-block;
+  font-size: 18px;
+}
+
+.skill-circle > svg {
+  height: 100%;
+}
+
+.skill-title {
+  font-weight: 600;
+  margin: 15px 0 0 0;
+}
+
+.skill-subtitle {
+  font-style: italic;
+  font-size: small;
+  margin-top: 0;
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+.connect-icons {
+  margin: 0 15px 0 0;
+  vertical-align: middle;
+}
+
+.connect-icons-break {
+  vertical-align: super;
+}
+
+.connect-text {
+  display: inline-block;
+  margin: 5px;
+}
+
+.red-text {
+  color: #E53935;
+}
