@@ -203,46 +203,14 @@ function setupBarSkills() {
 }
 
 function setupScrollfire() {
-  $('#intro').scrollfire({
+  $('#contact').scrollfire({
     // Offsets
     offset: 0,
-    topOffset: -50,
-    bottomOffset: 400,
+    topOffset: 250,
+    bottomOffset: 0,
 
-    onTopOut: function () {
-      changeNavbarStyle('white')
-    },
-    onTopIn: function () {
-      resetActive();
-      changeNavbarStyle('transparent')
-    }
-  });
-
-  $('#benatblockchain').scrollfire({
-    // Offsets
-    offset: 0,
-    topOffset: 200,
-    bottomOffset: -50,
-
-    onTopOut: function () {
-      setActive("benatblockchain");
-    },
-    onTopIn: function () {
-      setActive("benatblockchain");
-    }
-  });
-
-  $('#whyme').scrollfire({
-    // Offsets
-    offset: 0,
-    topOffset: 200,
-    bottomOffset: -1200,
-
-    onTopOut: function () {
-      setActive("whyme");
-    },
-    onTopIn: function () {
-      setActive("whyme");
+    onBottomIn: function () {
+      setActive("contact");
     }
   });
 
@@ -260,14 +228,46 @@ function setupScrollfire() {
     }
   });
 
-  $('#contact').scrollfire({
+  $('#whyme').scrollfire({
     // Offsets
     offset: 0,
-    topOffset: 250,
-    bottomOffset: 0,
+    topOffset: 200,
+    bottomOffset: -1200,
 
-    onBottomIn: function () {
-      setActive("contact");
+    onTopOut: function () {
+      setActive("whyme");
+    },
+    onTopIn: function () {
+      setActive("whyme");
+    }
+  });
+
+  $('#benatblockchain').scrollfire({
+    // Offsets
+    offset: 0,
+    topOffset: 200,
+    bottomOffset: -50,
+
+    onTopOut: function () {
+      setActive("benatblockchain");
+    },
+    onTopIn: function () {
+      setActive("benatblockchain");
+    }
+  });
+
+  $('#intro').scrollfire({
+    // Offsets
+    offset: 0,
+    topOffset: -50,
+    bottomOffset: 400,
+
+    onTopOut: function () {
+      changeNavbarStyle('white')
+    },
+    onTopIn: function () {
+      resetActive();
+      changeNavbarStyle('transparent')
     }
   });
 }
