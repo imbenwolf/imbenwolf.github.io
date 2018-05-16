@@ -159,6 +159,7 @@ p {
   text-align: right;
   font-size: 16px;
   min-width: 120px;
+  max-width: 130px;
 }
 
 .whyme-reasons .reason:after {
@@ -172,7 +173,7 @@ p {
   top: 5px;
 }
 
-@media (max-width: 945px) {
+@media (max-width: 993px) {
   .parallax-container .section {
     position: absolute;
     top: 40%;
@@ -182,14 +183,15 @@ p {
     top: 20%;
   }
 
-  .whyme-reasons .reason::before {
+  .whyme-reasons .reason:before {
     left: 0.5px;
     top: 20px;
     min-width: 0;
+    max-width: none;
     font-size: 13px;
   }
 
-  .whyme-reasons h3 {
+  .whyme-reasons h4 {
     font-size: 16px;
   }
 
@@ -218,21 +220,6 @@ p {
 
   .big-logo {
     height: 100px !important;
-  }
-
-  .whyme-reasons .reason::before {
-    left: 0.5px;
-    top: 38px;
-    min-width: 0;
-    font-size: 13px;
-  }
-
-  .whyme-reasons h3 {
-    font-size: 16px;
-  }
-
-  .whyme-reasons p {
-    padding-top: 20px;
   }
 }
 
@@ -298,8 +285,4 @@ footer.page-footer {
 .connect-text {
   display: inline-block;
   margin: 5px;
-}
-
-.red-text {
-  color: #E53935;
 }
